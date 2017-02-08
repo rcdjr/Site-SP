@@ -40,7 +40,7 @@ body #side-panel.dark { background-color: #383838; }
 
 .dark .section,
 .section.dark {
-	background-color: #282828;
+	background-color: #553f6e;
 	border-color: rgba(255,255,255,0.1);
 }
 
@@ -1022,7 +1022,7 @@ body.top-search-open .dark #header-wrap:not(.not-dark) #top-search a,
 
 #footer.dark,
 .dark #footer {
-	background-color: #333;
+	background-color: #e77524;
 	color: #CCC;
 	border-top-color: rgba(0,0,0,0.2);
 }
@@ -1745,4 +1745,3 @@ body #side-panel.dark #side-panel-trigger-close a {
 	.dark .pricing-box.pricing-extended .pricing-action-area { border-top-color: rgba(255,255,255,0.15); }
 
 }
-
