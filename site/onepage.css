@@ -275,6 +275,7 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched #header .containe
 	font-size: 24px;
 	letter-spacing: 1px;
 	font-weight: 300;
+	color: #444444;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-style: normal;
 }
@@ -321,6 +322,8 @@ body.side-panel-left.side-push-panel.side-panel-open.stretched #header .containe
 .bgroxo {
 	background-color: #553f6e;
 	width:100%;
+	margin-left: 0;
+	margin-right: 0;
 }
 .border-form-control {
 	height: 48px;
