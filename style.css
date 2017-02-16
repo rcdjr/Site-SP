@@ -1353,7 +1353,9 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 }
 
 #logo + #primary-menu.style-2 { border-top: 0; }
-
+#side-panel-trigger {
+    display: none!important;
+}
 #primary-menu.style-2 > div #top-search,
 #primary-menu.style-2 > div #top-cart,
 #primary-menu.style-2 > div #side-panel-trigger {
@@ -13607,4 +13609,22 @@ body:not(.no-transition) #wrapper,
 	transform: none!important;
 	margin:0!important;
 	padding:0!important
+}
+
+/*PASSAR PARA LOCAL CORRETO*/
+#section-contact h2.change-cards {
+    padding-left: 3px;
+}
+#section-contact h2.change-cards, #section-contact .button {
+    color: #fff;
+}
+#section-contact input, #section-contact textarea {
+    color: #fff;
+}
+#section-contact .button-border {
+    border: 2px solid #fff;
+}
+#section-contact .button-border:hover {
+    background-color:#fff;
+    color:#000;
 }

@@ -24,6 +24,7 @@
 	background-color: #FFF;
 	-webkit-transition: height .4s ease, background-color .4s ease, opacity .3s ease;
 	-o-transition: height .4s ease, background-color .4s ease, opacity .3s ease;
+	-o-transition: height .4s ease, background-color .4s ease, opacity .3s ease;
 	transition: height .4s ease, background-color .4s ease, opacity .3s ease;
 }
 
