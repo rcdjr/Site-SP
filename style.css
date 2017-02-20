@@ -111,19 +111,19 @@ dl, dt, dd, ol, ul, li {
 }
 
 ::selection {
-	background: #1ABC9C;
+	background: #E77524;
 	color: #FFF;
 	text-shadow: none;
 }
 
 ::-moz-selection {
-	background: #1ABC9C; /* Firefox */
+	background: #E77524; /* Firefox */
 	color: #FFF;
 	text-shadow: none;
 }
 
 ::-webkit-selection {
-	background: #1ABC9C; /* Safari */
+	background: #E77524; /* Safari */
 	color: #FFF;
 	text-shadow: none;
 }
@@ -165,16 +165,22 @@ iframe { border: none !important; }
 h1,
 h2,
 h3,
-h4,
+
 h5,
 h6 {
 	color: #444;
 	font-weight: 600;
 	line-height: 1.5;
 	margin: 0 0 30px 0;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Roboto', sans-serif;
 }
-
+h4{
+	color: #fff!important;
+	font-weight: 600;
+	line-height: 1.5;
+	margin: 0 0 30px 0;
+	font-family: 'Roboto', sans-serif;
+}
 h5,
 h6 { margin-bottom: 20px; }
 
@@ -397,6 +403,8 @@ span.middot {
 .t600 { font-weight: 600 !important; }
 
 .t700 { font-weight: 700 !important; }
+
+.lsm1 { letter-spacing: -1px !important; }
 
 .ls0 { letter-spacing: 0px !important; }
 
@@ -7525,7 +7533,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box p {
 	margin: 8px 0 0 0;
-	color: #999;
+	color: #fff;
 }
 
 .feature-box .before-heading { font-size: 14px; }
@@ -10937,12 +10945,14 @@ body:not(.device-touch) .text-overlay {
 }
 
 .sm-form-control::-moz-placeholder {
-	color: #999;
+	color: #fff;
 	opacity: 1;
 }
 
-.sm-form-control:-ms-input-placeholder { color: #999; }
-.sm-form-control::-webkit-input-placeholder { color: #999; }
+.sm-form-control:-ms-input-placeholder { color: #fff;
+opacity: 1; }
+.sm-form-control::-webkit-input-placeholder { color: #fff;
+opacity: 1;}
 
 .sm-form-control[disabled],
 .sm-form-control[readonly],
@@ -13613,10 +13623,12 @@ body:not(.no-transition) #wrapper,
 
 /*PASSAR PARA LOCAL CORRETO*/
 #section-contact h2.change-cards {
-    padding-left: 3px;
+	padding-top: 30px;
+	padding-bottom: 60px;
 }
 #section-contact h2.change-cards, #section-contact .button {
     color: #fff;
+
 }
 #section-contact input, #section-contact textarea {
     color: #fff;
@@ -13630,21 +13642,44 @@ body:not(.no-transition) #wrapper,
 }
 
 .hover-detail:hover {
-/*height: 266px;*/
 background: #E77524;
 opacity: .9;
 margin-left: auto;
 margin-right: auto;
+max-width: 100%;
+max-height: 100%;
+font-size: 100%!important;
+
 
 
 	}
 
 .details {
 display: none;
+
 }
 
 	.hover-detail:hover .details {
-	display: block
+	display: inline-block
+
+
+}
+
+.hover-detail:hover .fbox-icon {
+display: none;
+}
+.hover-detail:hover h3 {
+display: none;
+}
+
+.details p h4 {
+	color: #fff!important;
+font-size: 100%;
+	padding-top: : 1%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 
@@ -13653,4 +13688,7 @@ display: none;
 	margin-left: auto;
 	margin-right: auto;
 
+}
+.clients-inline {
+	display: inline-flex;
 }
