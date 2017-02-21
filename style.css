@@ -176,9 +176,9 @@ h6 {
 }
 h4{
 	color: #fff!important;
-	font-weight: 600;
-	line-height: 1.5;
-	margin: 0 0 30px 0;
+	font-weight: 500;
+	line-height: 1.2;
+	margin: 2px 2px 2px 2px;
 	font-family: 'Roboto', sans-serif;
 }
 h5,
@@ -404,7 +404,7 @@ span.middot {
 
 .t700 { font-weight: 700 !important; }
 
-.lsm1 { letter-spacing: -1px !important; }
+.lsm1 { letter-spacing: -2px !important; }
 
 .ls0 { letter-spacing: 0px !important; }
 
@@ -3519,7 +3519,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	background-color: #FFF;
 }
 
-#content p { line-height: 1.8; }
+#content p { line-height: 1.2; }
 
 .content-wrap {
 	position: relative;
@@ -13643,12 +13643,14 @@ body:not(.no-transition) #wrapper,
 
 .hover-detail:hover {
 background: #E77524;
+color: #fff!important;
 opacity: .9;
 margin-left: auto;
 margin-right: auto;
 max-width: 100%;
 max-height: 100%;
 font-size: 100%!important;
+text-size-adjust: 100%!important;
 
 
 
@@ -13674,21 +13676,31 @@ display: none;
 
 .details p h4 {
 	color: #fff!important;
-font-size: 100%;
-	padding-top: : 1%;
+	font-size: 100%;
+	padding-top: : 0;
+	padding-bottom: 10px;
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: auto;
-	margin-bottom: auto;
-}
+	margin-top: 0;
+	margin-bottom: 0;
 
+
+}
+.padadd{
+
+	padding-top: 12%;
+	padding-bottom: : 24%;
+	border-bottom: 2px solid #fff;
+	max-width: 7%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 15%;
+
+}
 
 .logo-topo {
 	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
 
-}
-.clients-inline {
-	display: inline-flex;
 }
