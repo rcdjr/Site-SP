@@ -279,7 +279,10 @@ body:not(.device-touch) .social-icon i {
 .si-xing:hover,
 .si-colored.si-xing { background-color: #126567 !important; }
 .si-instagram:hover,
-.si-colored.si-instagram { background-color: #3F729B !important; }
+.si-colored.si-instagram { background-color: #fff !important;
+	-moz-opacity: 0.99;
+	  /* Mozilla */
+	  opacity: 0.99; }
 .si-quora:hover,
 .si-colored.si-quora { background-color: #A82400 !important; }
 .si-openid:hover,

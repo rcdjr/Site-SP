@@ -8684,7 +8684,7 @@ body:not(.device-touch) .social-icon i {
 }
 
 .si-facebook:hover,
-.si-colored.si-facebook { background-color: #3B5998 !important; }
+.si-colored.si-facebook { background-color: rgba(0, 0, 0, 0.3) !important; }
 .si-delicious:hover,
 .si-colored.si-delicious { background-color: #205CC0 !important; }
 .si-paypal:hover,
@@ -8812,7 +8812,7 @@ body:not(.device-touch) .social-icon i {
 .si-xing:hover,
 .si-colored.si-xing { background-color: #126567 !important; }
 .si-instagram:hover,
-.si-colored.si-instagram { background-color: #3F729B !important; }
+.si-colored.si-instagram { background-color: rgba(0, 0, 0, 0.3) !important; }
 .si-quora:hover,
 .si-colored.si-quora { background-color: #A82400 !important; }
 .si-openid:hover,
