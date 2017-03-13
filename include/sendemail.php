@@ -5,8 +5,8 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'rcd_jr@outlook.com', // Your Email Address
-				'name' => 'ricardo' // Your Name
+				'email' => 'contato@agenciaspcomunicacao.com.br', // Your Email Address
+				'name' => 'contato' // Your Name
 			);
 
 // Form Processing Messages
@@ -19,6 +19,14 @@ $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
 
+$mail->IsSMTP();
+$mail->Host = "smtp.gmail.com";
+$mail->SMTPDebug = 0;
+$mail->SMTPSecure = 'ssl';
+$mail->SMTPAuth = true;
+$mail->Port = 587;
+$mail->Username = "contato@agenciaspcomunicacao.com.br";
+$mail->Password = "mailPWD-agenciasp";
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	if( $_POST['template-contactform-email'] != '' ) {

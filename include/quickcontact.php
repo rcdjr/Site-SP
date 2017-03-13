@@ -5,8 +5,8 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'contato@agenciaspcomunicacao.com.br', // Your Email Address
+				'name' => 'contato' // Your Name
 			);
 
 // Form Processing Messages

@@ -8,8 +8,8 @@ $listId = '69350e983d'; // Your MailChimp List ID
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+				'email' => 'contato@agenciaspcomunicacao.com.br', // Your Email Address
+				'name' => 'contato' // Your Name
 			);
 
 // Form Processing Messages
