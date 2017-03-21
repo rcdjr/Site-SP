@@ -24,7 +24,7 @@ $mail->Host = "smtp.gmail.com";
 $mail->SMTPDebug = 0;
 $mail->SMTPSecure = 'ssl';
 $mail->SMTPAuth = true;
-$mail->Port = 587;
+$mail->Port = 465;
 $mail->Username = "contato@agenciaspcomunicacao.com.br";
 $mail->Password = "mailPWD-agenciasp";
 

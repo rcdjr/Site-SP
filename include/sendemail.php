@@ -5,12 +5,13 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'username@website.com', // Your Email Address
-				'name' => 'Your Name' // Your Name
+	'email' => 'contato@agenciaspcomunicacao.com.br', // Your Email Address
+	'name' => 'contato' // Your Name
 			);
+			$mail->SMTPDebug = 2;
 
 // Form Processing Messages
-$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'Nós recebemos com <strong>sucesso</strong> sua mensagem, retornaremos o mais breve possivel.';
 
 // Add this only if you use reCaptcha with your Contact Forms
 $recaptcha_secret = 'your-recaptcha-secret-key'; // Your reCaptcha Secret
@@ -18,6 +19,17 @@ $recaptcha_secret = 'your-recaptcha-secret-key'; // Your reCaptcha Secret
 $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
+
+
+$mail->IsSMTP();
+$mail->Host = "smtp.gmail.com";
+$mail->SMTPDebug = 0;
+$mail->SMTPSecure = 'ssl';
+$mail->SMTPAuth = true;
+$mail->Port = 465;
+$mail->Username = "contato@agenciaspcomunicacao.com.br";
+$mail->Password = "mailPWD-agenciasp";
+
 
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
