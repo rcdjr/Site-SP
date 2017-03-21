@@ -10,7 +10,7 @@ $toemails[] = array(
 			);
 
 // Form Processing Messages
-$message_success = 'We have <strong>successfully</strong> received your Message and will get Back to you as soon as possible.';
+$message_success = 'Nós recebemos com <strong>sucesso</strong> sua mensagem, retornaremos o mais breve possivel.';
 
 $mail = new PHPMailer();
 
@@ -46,7 +46,7 @@ if( isset( $_POST['widget-subscribe-form-email'] ) ) {
 			echo '{ "alert": "error", "message": "Email <strong>could not</strong> be sent due to some Unexpected Error. Please Try Again later.<br /><br /><strong>Reason:</strong><br />' . $mail->ErrorInfo . '" }';
 		endif;
 	} else {
-		echo '{ "alert": "error", "message": "Please <strong>Fill up</strong> all the Fields and Try Again." }';
+		echo '{ "alert": "error", "message": "Por favor verifique se todos os campos estão <strong>preenchidos</strong>." }';
 	}
 } else {
 	echo '{ "alert": "error", "message": "An <strong>unexpected error</strong> occured. Please Try Again later." }';

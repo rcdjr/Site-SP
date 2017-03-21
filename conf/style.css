@@ -10565,8 +10565,8 @@ blockquote.pull-right {
 
 .owl-carousel .owl-item img {
 	display:block;
-	width:100%;
-	padding: 2%;
+	width:85%;
+	padding: 5%;
 	margin: auto;
 	-webkit-transform-style:preserve-3d;
 }

@@ -1,4 +1,4 @@
-<?php
+data-notify-msg<?php
 
 $apiKey = ''; // Your MailChimp API Key
 $listId = ''; // Your MailChimp List ID

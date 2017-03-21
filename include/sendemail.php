@@ -5,8 +5,8 @@ require_once('phpmailer/PHPMailerAutoload.php');
 $toemails = array();
 
 $toemails[] = array(
-				'email' => 'contato@agenciaspcomunicacao.com.br', // Your Email Address
-				'name' => 'contato' // Your Name
+				'email' => 'username@website.com', // Your Email Address
+				'name' => 'Your Name' // Your Name
 			);
 
 // Form Processing Messages
@@ -19,14 +19,6 @@ $mail = new PHPMailer();
 
 // If you intend you use SMTP, add your SMTP Code after this Line
 
-$mail->IsSMTP();
-$mail->Host = "smtp.gmail.com";
-$mail->SMTPDebug = 0;
-$mail->SMTPSecure = 'ssl';
-$mail->SMTPAuth = true;
-$mail->Port = 587;
-$mail->Username = "contato@agenciaspcomunicacao.com.br";
-$mail->Password = "mailPWD-agenciasp";
 
 if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 	if( $_POST['template-contactform-email'] != '' ) {
@@ -34,7 +26,6 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 		$name = isset( $_POST['template-contactform-name'] ) ? $_POST['template-contactform-name'] : '';
 		$email = isset( $_POST['template-contactform-email'] ) ? $_POST['template-contactform-email'] : '';
 		$phone = isset( $_POST['template-contactform-phone'] ) ? $_POST['template-contactform-phone'] : '';
-		$service = isset( $_POST['template-contactform-service'] ) ? $_POST['template-contactform-service'] : '';
 		$subject = isset( $_POST['template-contactform-subject'] ) ? $_POST['template-contactform-subject'] : '';
 		$message = isset( $_POST['template-contactform-message'] ) ? $_POST['template-contactform-message'] : '';
 
@@ -54,12 +45,11 @@ if( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 			$name = isset($name) ? "Name: $name<br><br>" : '';
 			$email = isset($email) ? "Email: $email<br><br>" : '';
 			$phone = isset($phone) ? "Phone: $phone<br><br>" : '';
-			$service = isset($service) ? "Service: $service<br><br>" : '';
 			$message = isset($message) ? "Message: $message<br><br>" : '';
 
 			$referrer = $_SERVER['HTTP_REFERER'] ? '<br><br><br>This Form was submitted from: ' . $_SERVER['HTTP_REFERER'] : '';
 
-			$body = "$name $email $phone $service $message $referrer";
+			$body = "$name $email $phone $message $referrer";
 
 			// Runs only when File Field is present in the Contact Form
 			if ( isset( $_FILES['template-contactform-file'] ) && $_FILES['template-contactform-file']['error'] == UPLOAD_ERR_OK ) {
