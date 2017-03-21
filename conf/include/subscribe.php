@@ -1,7 +1,7 @@
 data-notify-msg<?php
 
-$apiKey = ''; // Your MailChimp API Key
-$listId = ''; // Your MailChimp List ID
+$apiKey = '8dfa69408eea2b0835dde27703543b08-us15'; // Your MailChimp API Key
+$listId = 'fd3f8d4727'; // Your MailChimp List ID
 
 if( isset( $_GET['list'] ) AND $_GET['list'] != '' ) {
 	$listId = $_GET['list'];
